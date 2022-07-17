@@ -6,7 +6,7 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 15:05:55 by plau              #+#    #+#             */
-/*   Updated: 2022/07/10 17:06:11 by plau             ###   ########.fr       */
+/*   Updated: 2022/07/17 19:53:51 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 }
 /*
 d > s means that d's memory is after s
-question
-1. why need to create another variable- same data type
-2. a bit confused...
-overlapping 
+if destination is before source, can use memcpy 
 
 int main(void)
 {
