@@ -7,10 +7,11 @@ CFLAGS		=	-Wall -Werror -Wextra
 HEADER		=	Libft/libft.h
 
 #AR command
-#Question- using ar command to create library
 AR			=	ar rcs
 
 #Source files
+INCLUDE		=	ft_printf.h
+
 SRCS		=	ft_numbers.c ft_printf.c ft_unsigned.c ft_hexa.c ft_hexapointer.c
 
 OBJS		=	$(SRCS:.c=.o)
@@ -23,8 +24,8 @@ $(NAME)		:	$(OBJS)
 				mv libft.a $(NAME)
 				$(AR) $(NAME) $(OBJS)
 
-%.o 		:	%.c 
-				$(CC) $(CFLAGS) -I $(HEADER) -o $@ -c $<
+%.o 		:	%.c
+				$(CC) $(CFLAGS) -I $(HEADER) -I $(INCLUDE) -o $@ -c $<
 
 clean		:	
 				rm -rf $(OBJS)

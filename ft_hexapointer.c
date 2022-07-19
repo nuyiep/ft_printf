@@ -6,7 +6,7 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/17 14:22:47 by plau              #+#    #+#             */
-/*   Updated: 2022/07/17 17:05:51 by plau             ###   ########.fr       */
+/*   Updated: 2022/07/18 19:42:46 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,12 @@ int	ft_hexaptr_len(uintptr_t ptr)
 }
 
 // print pointer address
-//more than 16? or more than or equals to- both correct
+// ptr has to be more than or equal to 16 because str[16] is a null terminating character
 void	ft_print_ptr(uintptr_t ptr)
 {
 	char		*str;
 
-	if (ptr > 16)
+	if (ptr >= 16)
 	{
 		ft_print_ptr(ptr / 16);
 		ft_print_ptr(ptr % 16);
