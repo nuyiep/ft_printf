@@ -6,21 +6,23 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 19:31:27 by plau              #+#    #+#             */
-/*   Updated: 2022/07/17 17:18:54 by plau             ###   ########.fr       */
+/*   Updated: 2022/07/19 17:59:18 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-// %c- putchar is a built-in function in C 
-// alternatively, write(1, &ch, 1), next line return (1)
+/* %c- putchar is a built-in function in C 
+	alternatively, write(1, &ch, 1), next line return (1)
+*/
 int	ft_putchar(char ch)
 {
 	return (write(1, &ch, 1));
 }
 
-//%s - puts is a built-in function in C 
-//return how many digits in the int
+/* %s - puts is a built-in function in C 
+	return how many digits in the int
+*/
 int	ft_puts(const char *s)
 {
 	int	i;
@@ -39,7 +41,7 @@ int	ft_puts(const char *s)
 	return (i);
 }
 
-//%% - void? int?
+/* %% */
 int	print_percent(void)
 {
 	write(1, "%", 1);

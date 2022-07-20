@@ -6,13 +6,13 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/15 15:14:53 by plau              #+#    #+#             */
-/*   Updated: 2022/07/17 16:09:04 by plau             ###   ########.fr       */
+/*   Updated: 2022/07/19 17:56:42 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-//%x - print hexa and return length 
+/* %x - print hexa and return length */
 int	ft_hexa_len(unsigned int n)
 {
 	unsigned int	len;

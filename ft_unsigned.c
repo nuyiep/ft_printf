@@ -6,15 +6,15 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/14 14:08:03 by plau              #+#    #+#             */
-/*   Updated: 2022/07/17 19:13:40 by plau             ###   ########.fr       */
+/*   Updated: 2022/07/19 17:59:54 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-// %u Prints an unsigned decimal (base 10) number
-// same as ft_itoa just remove the negative number parts 
-
+/* %u Prints an unsigned decimal (base 10) number
+	same as ft_itoa just remove the negative number parts 
+*/
 int	ft_unsigned_len(unsigned int n)
 {
 	int	len;
