@@ -1,0 +1,21 @@
+
+buffer management 
+	original printf only print out when function ends or after \n
+
+int main()
+{
+	printf("Hello")
+	write(1, "12345", 5);
+		// will print out 12345Hello
+
+	printf("Hello\n");
+	write(1, "12345", 5);
+		// will print out
+			Hello
+			12345
+	
+	printf("Hello");
+	fflush(stdout); //clear buffer
+	write(1, "12345", 5);
+		// will print out 
+			Hello12345
