@@ -67,3 +67,14 @@ int	ft_hexa_lower(unsigned int n)
 	}
 	return (ft_hexa_len(n));
 }
+
+/*
+void	print_hex(int n)
+{
+	char hex_digits[] = "0123456789abcdef";
+
+	if (n >= 16)
+		print_hex(n / 16);
+	write(1, &hex_digits[n % 16], 1);
+}
+*/
